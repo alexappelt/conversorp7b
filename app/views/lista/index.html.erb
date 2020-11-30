@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+<main role="main" class="container">
+<div class="jumbotron">
+  <h1>Lista de Certificados</h1>
+  <p class="lead">Caso não tiver o certificado abaixo, clique no botão abaixo para gerar</p>
+  
+  <%= link_to 'Gerar certificado' , '/conversor' , class:"btn btn-success"%> <br>
+ 
+ 
+  <% @arquivo.each do |a| %>
+    <a class="btn btn-warning mt-2" href="/certificados/<%= a.nome %>" h><%= a.nome %> </a>  <br>
+    
+   
+
+    <%end%>
+
+
+</div>
+</main>
