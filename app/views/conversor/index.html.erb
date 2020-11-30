@@ -12,7 +12,9 @@
       <div class="jumbotron">
         <h1>Conversor Certificado</h1>
         <p class="lead">Selecione o estado e importe o arquivo p7b , após isso clique em gerar</p>
-       
+        <p class="lead"> Verifique a lista de certificados, onde irá exibir os que ja foram gerados </p>
+
+        <a href="/lista" class="btn btn-info mb-2"> Lista de Certificados Gerados </a>
        
 <%= form_with(url:  "gerar" , multipart: true) do |form| %>
 

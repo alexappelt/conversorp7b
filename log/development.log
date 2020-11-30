@@ -6444,3 +6444,67 @@ puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.6) lib/puma/server.rb:472:in `process_client'
 puma (4.3.6) lib/puma/server.rb:328:in `block in run'
 puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/lista" for ::1 at 2020-11-30 18:59:54 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListaController#index as HTML
+  Rendering lista/index.html.erb within layouts/application
+  [1m[36mArquivo Load (0.2ms)[0m  [1m[34mSELECT "arquivos".* FROM "arquivos"[0m
+  ↳ app/views/lista/index.html.erb:19
+  Rendered lista/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2325)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 0.6ms | Allocations: 9762)
+
+
+Started GET "/conversor" for ::1 at 2020-11-30 18:59:58 -0300
+Processing by ConversorController#index as HTML
+  Rendering conversor/index.html.erb within layouts/application
+  Rendered conversor/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 535)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4817)
+
+
+Started GET "/lista" for ::1 at 2020-11-30 18:59:59 -0300
+Processing by ListaController#index as HTML
+  Rendering lista/index.html.erb within layouts/application
+  [1m[36mArquivo Load (0.3ms)[0m  [1m[34mSELECT "arquivos".* FROM "arquivos"[0m
+  ↳ app/views/lista/index.html.erb:19
+  Rendered lista/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 4476)
+
+
+Started GET "/conversor" for ::1 at 2020-11-30 19:02:12 -0300
+Processing by ConversorController#index as HTML
+  Rendering conversor/index.html.erb within layouts/application
+  Rendered conversor/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5044)
+
+
+Started GET "/conversor" for ::1 at 2020-11-30 19:02:20 -0300
+Processing by ConversorController#index as HTML
+  Rendering conversor/index.html.erb within layouts/application
+  Rendered conversor/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/lista" for ::1 at 2020-11-30 19:02:21 -0300
+Processing by ListaController#index as HTML
+  Rendering lista/index.html.erb within layouts/application
+  [1m[36mArquivo Load (0.2ms)[0m  [1m[34mSELECT "arquivos".* FROM "arquivos"[0m
+  ↳ app/views/lista/index.html.erb:19
+  Rendered lista/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 846)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms | Allocations: 5204)
+
+
+Started GET "/conversor" for ::1 at 2020-11-30 19:02:22 -0300
+Processing by ConversorController#index as HTML
+  Rendering conversor/index.html.erb within layouts/application
+  Rendered conversor/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 3958)
+
+
